@@ -1,0 +1,42 @@
+---
+title: "Testing"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Testing}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Objective 
+
+This vignette covers testing the `djwr` functions. 
+
+```{r setup, message=FALSE, warning=FALSE}
+library(djwr)
+library(testthat)
+```
+
+
+
+```{r , warning=FALSE}
+tmp_pth <- tempdir()
+ger_code(folder_name = tmp_pth)
+fs::dir_tree(tmp_pth)
+```
+
+
+```{r , eval=FALSE}
+
+```
+
+```{r}
+testthat::test_file("../tests/testthat/test-ger_code.R")
+```
+

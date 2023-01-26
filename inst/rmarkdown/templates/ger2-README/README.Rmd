@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- 
+README.md is the output from README.Rmd. 
+Please edit and knit that file. 
+
+RENDER `README.Rmd` REGULARLY TO KEEP `README.md` UP-TO-DATE**
+-->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# [Your Project] 
+
+Run the functions below in the console to create some handy project files:
+
+```r
+# create code/, docs/, and results/ 
+prep_folders()
+```
+
+The goal of [Your Project] is to ...
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+
